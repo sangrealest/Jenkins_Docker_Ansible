@@ -12,6 +12,7 @@ Poll SCM: H * * * *
 Shell Command:
 
 /bin/bash
+
 set -e
 
 set -u
