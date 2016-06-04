@@ -5,8 +5,8 @@ Git address: git@github.com:sangrealest/Jenkins_Docker_Ansible.git
 Workspace: /var/lib/jenkins/jobs/jenkins-docker/workspace
 Poll SCM: H * * * *
 
-
 Shell Command:
+
 #!/bin/sh
 set -e
 set -u
