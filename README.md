@@ -7,9 +7,9 @@ Poll SCM: H * * * *
 
 
 Shell Command:
-#!/bin/sh                                                                                                                                                            
-id
-set +e
+#!/bin/sh
+set -e
+set -u
 echo '>>> Get old container id'
 
 CID=$(docker ps | grep "jenkins-docker" | awk '{print $1}')
