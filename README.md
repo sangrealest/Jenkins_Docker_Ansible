@@ -4,7 +4,8 @@ Run a jenkins, such as get up an jenkins container, create a new project with fr
 Git address: git@github.com:sangrealest/Jenkins_Docker_Ansible.git
 Workspace: /var/lib/jenkins/jobs/jenkins-docker/workspace
 Poll SCM: H * * * *
-------------------------------------------------------------------------------------------------------
+
+
 Shell Command:
 #!/bin/sh                                                                                                                                                            
 id
@@ -30,9 +31,10 @@ sleep 5
   
 echo '>>> Starting new container'
 sudo /usr/bin/docker run -p 3000:80 -d jenkins-docker
-------------------------------------------------------------------------------------------------------
-add jenkins to docker group: sudo usermod -G docker jenkins
-add jenkins use sudo without password: jenkins ALL=(ALL:ALL) NOPASSWD: ALL
+
+
+Add jenkins to docker group: sudo usermod -G docker jenkins
+Grant jenkins use sudo without password: jenkins ALL=(ALL:ALL) NOPASSWD: ALL
 
 after this, build the project.
 
